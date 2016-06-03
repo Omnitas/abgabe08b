@@ -26,10 +26,9 @@ public class StringQueue implements Queue {
 	
 /**
  * 
- * Adds the String obj to the queue
- * If the addition is succesful, the method returns true
- * @param obj
- * @return
+ * Adds the String object to the queue
+ * @param obj String object which should be offered
+ * @return true if the addition was successfull otherwise false
  * 
  */
 	@Override
@@ -48,8 +47,7 @@ public class StringQueue implements Queue {
 /**
  * 
  * Gets the first Element of the queue and deletes it.
- * If there is no Element the method returns null
- * @return
+ * @return the polled String, if queue is empty null
  * 
  */
 	@Override
@@ -67,8 +65,8 @@ public class StringQueue implements Queue {
 /**
  * 
  * Gets the first Element from the Queue and deletes it
- * But throws an NoSuchElementException if the Queue is empty
- * @return
+ * @throws NoSuchElementException if Queue is empty
+ * @return the removed String
  * 
  */
 	@Override
@@ -85,8 +83,7 @@ public class StringQueue implements Queue {
 /**
  * 
  * Gets the first Element from the Queue but doesn't delete it
- * Returns null if the queue is empty
- * @return
+ * @return the peeked String, null if Queue is empty
  * 
  */
 	@Override
@@ -102,8 +99,8 @@ public class StringQueue implements Queue {
 /**
  * 
  * Gets the first Element from the Queue but doesn't delete it 
- * Throws an NoSuchElementException if the queue is empty
- * @return
+ * @throws NoSuchElementException if the Queue is empty
+ * @return the element
  * 
  */
 	@Override
